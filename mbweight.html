@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The Only Weight You Need to Know</title>
+	<link rel="stylesheet" type="text/css" href="stylemb.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="container">
+		
+		<div id="main">
+			
+			<h1>How Many Big Mary's do you Weigh?</h1>
+
+			<img class="snapshot" src="images/bigmarypic1.png" width="225" height="225" alt="big mary sandwich"/>
+	
+			<p>Enter your weight in pounds below to see how many Big Mary's you weigh.</p>
+			
+			<div id = "weightEntry">
+				<label class = "amount"> lbs.
+				<input type = "number" name = "amount" id = "amount"
+				placeholder = "150" />
+    			</label>
+				<p id="result"></p>
+			</div>
+
+			<div id = "pickleChoice">
+				<label class="pickleCheck"> Select if you like a pickle on your Big Mary.
+				<input type="checkbox" name="pickleCheck" id="pickleCheck"></input>
+				<span class="checkmark"></span>
+				</label>
+				<p id="resultPickle"></p> 	
+			</div>
+		
+		</div>
+    
+	</div>
+	
+	<div id="footer">
+
+		<p class=uppercase>webpage design by Daniel O'Regan at <a href=https://goo.gl/maps/vZsXYKwm5511D8n26>his house</a> (St. John's, Newfoundland, Canada)</p>
+	
+	</div>
+
+<script src="bigmary.js"></script>
+
+</body>
+
+</html>
