@@ -12,41 +12,33 @@
 <body>
 
 	<div id="container">
-		
 		<div id="main">
-			
 			<h1>How Many Big Mary's do you Weigh?</h1>
-
-			<img class="snapshot" src="./images/bigmarypic1.png" width="225" height="225" alt="big mary sandwich"/>
-	
 			<p>Enter your weight in pounds below to see how many Big Mary's you weigh.</p>
 			
-			<div id = "weightEntry">
-				<label class = "amount"> lbs.
-				<input type = "number" name = "amount" id = "amount"
-				placeholder = "150" />
-    			</label>
-				<p id="result"></p>
-			</div>
+		<div id = "weightEntry">
+			<label class = "amount" style="font-size:50px">
+			<input type = "number"  name = "amount" id = "amount" style="height:100px; width:200px; font-size:50px;"/> lbs.
+    		</label>
+		</div>
 
-			<div id = "pickleChoice">
-				<label class="pickleCheck"> Select if you like a pickle on your Big Mary.
-				<input type="checkbox" name="pickleCheck" id="pickleCheck"></input>
+		<div class = "pickle">
+			<div id = "pickleYes">Check This Box if you Like Pickles on Your Big Mary.
+				<label class="pickleYes">
+				<input type="checkbox" name="pickleYes" id="pickleYes"></input>
 				<span class="checkmark"></span>
 				</label>
-				<p id="resultPickle"></p> 	
 			</div>
-		
 		</div>
+		<p id="result"></p>
+		<p id="resultPickle"></p>
+		<img class="chicken" src="./images/bigmarypic1.png" width="225" height="225" id="bigMary"/>
+		<div id= "img"></div>
+	</div>
+		
     
 	</div>
 	
-	<div id="footer">
-
-		<p class=uppercase>webpage design by Daniel O'Regan at <a href=https://goo.gl/maps/vZsXYKwm5511D8n26>his house</a> (St. John's, Newfoundland, Canada)</p>
-	
-	</div>
-
 <script src="bigmary.js"></script>
 
 </body>
