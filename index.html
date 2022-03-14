@@ -13,32 +13,34 @@
 
 	<div id="container">
 		<div id="main">
-			<h1>How Many Big Mary's do you Weigh?</h1>
+			<img class="chickenLeft" src="./images/bigmarypic1.png" width="225" height="225" id="bigMary"/>
+			<img class="chickenRight" src="./images/bigmarypic1.png" width="225" height="225" id="bigMary"/>
+			<h1>What's Your Weight in Big Mary's?</h1>
 			<p>Enter your weight in pounds below to see how many Big Mary's you weigh.</p>
 			
 		<div id = "weightEntry">
 			<label class = "amount" style="font-size:50px">
 			<input type = "number"  name = "amount" id = "amount" style="height:100px; width:200px; font-size:50px;"/> lbs.
     		</label>
-		</div>
+			</div>
 
 		<div class = "pickle">
-			<div id = "pickleYes">Check This Box if you Like Pickles on Your Big Mary.
-				<label class="pickleYes">
-				<input type="checkbox" name="pickleYes" id="pickleYes"></input>
-				<span class="checkmark"></span>
-				</label>
+			<div> Click the Button Below if you Like Pickles on Your Big Mary.</div><br>
+			<label class="switch">
+			<input type="checkbox" name="pickleYes" id="pickleYes"></input>
+			<span class="slider"></span>
+			</label>
 			</div>
-		</div>
 		<p id="result"></p>
-		<p id="resultPickle"></p>
-		<img class="chicken" src="./images/bigmarypic1.png" width="225" height="225" id="bigMary"/>
-		<div id= "img"></div>
-	</div>
+		<div id="bigMaryContainer">
 		
-    
-	</div>
+
+		</div>
 	
+	</div>
+	</div>
+
+</div>	
 <script src="bigmary.js"></script>
 
 </body>

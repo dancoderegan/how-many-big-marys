@@ -6,46 +6,52 @@ Gravy = 0.308647 lbs.
 */
 
 const bigMaryWeight = 0.405651;
+
 function change(num) {
-  return (num / bigMaryWeight).toFixed(2);
+  return (num / bigMaryWeight).toFixed(1);
 }
 const inputElement = document.querySelector("#amount");
 const resultElement = document.querySelector("#result");
 
+let personsWeight = null;
+let withPickle = false;
+function updateResult() {
+  let value = null;
+
+  if (withPickle) {
+    value = addPickle(personsWeight);
+    resultElement.textContent = `You Weigh ${value} Big Marys With Pickles`;
+  } else {
+    value = change(personsWeight);
+    resultElement.textContent = `You Weigh ${value} Big Marys`;
+  }
+}
+
 inputElement.addEventListener("keyup", (event) => {
-  const result = change(parseInt(event.target.value));
-  resultElement.textContent = `You weigh ${result} Big Marys`;
+  personsWeight = parseInt(event.target.value);
+  updateResult();
 });
 
 const pickleCheck = 0.4210834;
 function addPickle(num) {
-  return (num / pickleCheck).toFixed(2);
+  return (num / pickleCheck).toFixed(1);
 }
 const pickleElement = document.querySelector("#pickleYes");
-const resultPickleElement = document.querySelector("#resultPickle");
 
-pickleElement.addEventListener("click", (event) => {
-  const resultPickle = addPickle(parseInt(event.target.value));
-  resultPickleElement.textContent = `You weigh ${resultPickle} Big Marys' With Pickle`;
+pickleElement.addEventListener("click", () => {
+  withPickle = !withPickle;
+  updateResult();
 });
-/*
-document.ready(function () {
-  var image = document.getElementById('bigMary').outerHTML;
-  ('#bigMary').hide();
 
-  function showInput(number) {
-    ('#result').html('');
-      for (var index = 0; index < number; index++) {
-        $('#bigMary').append(image);
-      }
+function displayNumberOfBigMarys(amount) {
+  const bm = document.createElement("img");
+  bm.src = "./images/bigmarypic1.png";
+  bm.width = 16;
+  bm.height = 16;
+
+  const listOfMyFood = [];
+  for (let i = 0; i <= amount; i++) {
+    listOfMyFood.push(bm.cloneNode());
   }
-  ("#amount").keyup(function () {
-    var number = parseInt('#result').val();
-    if (isNaN(number) || (number < 1 || number > 1000)) {
-      return false;
-    }  
-    showInput(number);
-    ("#number").attr();
-});
-});
-*/
+  document.getElementById("bigMaryContainer").replaceChildren(...listOfMyFood);
+}
