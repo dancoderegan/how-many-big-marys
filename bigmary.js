@@ -25,6 +25,7 @@ function updateResult() {
     value = change(personsWeight);
     resultElement.textContent = `You Weigh ${value} Big Marys`;
   }
+  displayNumberOfBigMarys(value);
 }
 
 inputElement.addEventListener("keyup", (event) => {
