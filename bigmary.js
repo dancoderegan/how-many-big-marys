@@ -47,8 +47,8 @@ pickleElement.addEventListener("click", () => {
 function displayNumberOfBigMarys(amount) {
   const bm = document.createElement("img");
   bm.src = "./images/bigmarypic1.png";
-  bm.width = 16;
-  bm.height = 16;
+  bm.width = 20;
+  bm.height = 20;
 
   const listOfMyFood = [];
   for (let i = 0; i <= amount; i++) {
