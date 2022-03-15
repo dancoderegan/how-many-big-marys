@@ -11,8 +11,8 @@ My Big Mary weight converter includes a variety of features and concepts:
     <li> Displaying output with fixed decimal results </li>
     <li> Visual display of images matching the same number from JS output </li>
     <li> Having the impulse control to actually weigh and photgraph a Big Mary before eating it </li>
-<ul>
+</ul>
 
-<li>Big thanks to my instructor <a href="https://github.com/jackharrhy">Jack</a> for all his support. Our mutual love of chicken sandwiches, and more importantly his disdain for pickles was the driving force behind this silly little creation.</li>
+Big thanks to my instructor <a href="https://github.com/jackharrhy">Jack</a> for all his support. Our mutual love of chicken sandwiches, and more importantly his disdain for pickles was the driving force behind this silly little creation.</li>
 
 https://dancoderegan.github.io/how-many-big-marys/
